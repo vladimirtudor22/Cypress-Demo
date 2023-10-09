@@ -8,12 +8,12 @@
 
 ### ⭐️ Features
 
-- [Navigation Bar](#🧭-application-feature-navigation-bar)
-- [Home Page](#🏠-application-feature-home-page)
-- [Account](#📄-application-feature-account)
-- [Contact Page](#✉️-application-feature-contact-page)
-- [Product Interaction](#🛒-application-feature-product-interaction)
-- [Order Placement](#🛒-application-feature-order-placement)
+- [Navigation Bar](#application-feature-navigation-bar)
+- [Home Page](#application-feature-home-page)
+- [Account](#application-feature-account)
+- [Contact Page](#application-feature-contact-page)
+- [Product Interaction](#application-feature-product-interaction)
+- [Order Placement](#application-feature-order-placement)
 
 ## 📝 Description
 
@@ -46,7 +46,7 @@ The tests in this project are conducted on the [Practice Software Testing](https
 
 Feel free to explore and adapt the project according to your testing needs!
 
-## 🧭 Application Feature: Navigation Bar
+## Application Feature: Navigation Bar
 
 The navigation bar is a critical component that allows users to access various sections and functionalities of the application. This set of automated tests ensures that users can smoothly navigate through the application using the navigation bar. 🚀
 
@@ -105,7 +105,7 @@ The navigation bar is a critical component that allows users to access various s
 - **Expected Outcome:**
   - The URL should include "/contact".
 
-## 🏠 Application Feature: Home Page
+## Application Feature: Home Page
 
 The Home Page is the initial landing page of the application, and these automated tests focus on ensuring smooth functionality and navigation within this crucial section. 🌟
 
@@ -135,7 +135,7 @@ The Home Page is the initial landing page of the application, and these automate
 - **Expected Outcome:**
   - The application should navigate smoothly between the pages.
 
-## 📄 Application Feature: Account
+## Application Feature: Account
 
 The Account feature encompasses all functionalities related to user accounts, registration, and login. These automated tests focus on ensuring a seamless user experience in managing their accounts. 🔐
 
@@ -232,7 +232,7 @@ The Contact Page allows users to send messages and inquiries to the platform. Th
 - **Expected Outcome:**
   - A success message confirming the message submission should be displayed.
 
-## 🛒 Application Feature: Product Interaction
+## Application Feature: Product Interaction
 
 The Product Interaction feature encompasses a set of tests that validate various actions a user can perform with products on the website. 🌟
 
@@ -290,7 +290,7 @@ The Product Interaction feature encompasses a set of tests that validate various
 - **Expected Outcome:**
   - Unauthorized message should appear indicating inability to add to favorites.
 
-## 🛒 Application Feature: Order Placement
+## Application Feature: Order Placement
 
 The Order Placement feature comprises a test that validates the process of placing an order on the website. 🌟
 
