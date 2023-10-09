@@ -273,7 +273,7 @@ The Product Interaction feature encompasses a set of tests that validate various
 - **Expected Outcome:**
   - Product is successfully added to the cart.
 
-#### 5. Add Product to Favorites ❤️
+#### 5. Add Product to Favorites ⭐️
 
 - **Test Steps:**
   - Log in to the platform.
