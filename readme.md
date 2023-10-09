@@ -2,6 +2,10 @@
 
 ## 📋 Content of this Project
 
+- [Description](#📝-description)
+- [Usage Instructions](#⚙️-usage-instructions)
+- [Selected Website for Testing](#🌐-selected-website-for-testing)
+
 ### 📝 Description
 
 This project aims to showcase automated testing using the Cypress framework. The tests are focused on a specially created website designed for automated testing demonstrations. The primary objective of this project is to provide a lively demonstration of automated testing.
