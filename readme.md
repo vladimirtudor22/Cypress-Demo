@@ -26,7 +26,17 @@ To run the automated tests for this project, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install the necessary dependencies using your package manager.
-4. Run the Cypress tests using the provided commands.
+   ex:
+
+```bash
+    yarn install
+```
+
+4. Run the Cypress tests using
+
+```bash
+    yarn cypress run
+```
 
 For detailed instructions, refer to the [Cypress Documentation](https://docs.cypress.io/).
 
@@ -301,3 +311,7 @@ The Order Placement feature comprises a test that validates the process of placi
   - Complete the order.
 - **Expected Outcome:**
   - Payment is successful, and a confirmation message is displayed.
+
+```
+
+```
