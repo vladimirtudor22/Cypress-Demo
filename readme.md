@@ -311,7 +311,3 @@ The Order Placement feature comprises a test that validates the process of placi
   - Complete the order.
 - **Expected Outcome:**
   - Payment is successful, and a confirmation message is displayed.
-
-```
-
-```
