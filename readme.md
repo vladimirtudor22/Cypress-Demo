@@ -5,6 +5,10 @@
 - [Description](#📝-description)
 - [Usage Instructions](#⚙️-usage-instructions)
 - [Selected Website for Testing](#🌐-selected-website-for-testing)
+- [Account](#📄-application-feature-account)
+- [Contact Page](#✉️-application-feature-contact-page)
+- [Product Interaction](#🛒-application-feature-product-interaction)
+- [Order Placement](#🛒-application-feature-order-placement)
 
 ### ⭐️ Features
 
@@ -120,3 +124,180 @@ The Home Page is the initial landing page of the application, and these automate
   - Click on different page numbers in the pagination.
 - **Expected Outcome:**
   - The application should navigate smoothly between the pages.
+
+## 📄 Application Feature: Account
+
+The Account feature encompasses all functionalities related to user accounts, registration, and login. These automated tests focus on ensuring a seamless user experience in managing their accounts. 🔐
+
+### Test Cases
+
+#### 1. Register 📝
+
+- **Test Steps:**
+  - Click on "Sign In" in the navigation bar.
+  - Click on the "Register" link.
+  - Fill in the registration form with valid details.
+  - Submit the registration form.
+- **Expected Outcome:**
+  - The user should be successfully registered.
+
+#### 2. Register with Existing Email 🚫
+
+- **Test Steps:**
+  - Click on "Sign In" in the navigation bar.
+  - Click on the "Register" link.
+  - Fill in the registration form with an email that already exists.
+  - Submit the registration form.
+- **Expected Outcome:**
+  - An error indicating that the email already exists should be displayed.
+
+#### 3. Login with Incorrect Credentials ❌
+
+- **Test Steps:**
+  - Click on "Sign In" in the navigation bar.
+  - Enter incorrect login credentials.
+  - Submit the login form.
+- **Expected Outcome:**
+  - An error indicating unsuccessful login should be displayed.
+
+#### 4. Login with Correct Credentials and Sign Out ✅
+
+- **Test Steps:**
+  - Perform a successful login (utilizes a reusable login command).
+  - Click on the user menu and choose "Sign Out".
+- **Expected Outcome:**
+  - The user should be successfully signed out.
+
+## ✉️ Application Feature: Contact Page
+
+The Contact Page allows users to send messages and inquiries to the platform. These automated tests ensure the proper functioning of the contact form and its validation. 📧
+
+### Test Cases
+
+#### 1. Message Too Short ⚠️
+
+- **Test Steps:**
+  - Fill in the contact form with a very short message.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - An error indicating that the message must be at least 50 characters long should be displayed.
+
+#### 2. Missing First Name ❌
+
+- **Test Steps:**
+  - Fill in the contact form without providing a first name.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - An error indicating that the first name is required should be displayed.
+
+#### 3. Missing Last Name ❌
+
+- **Test Steps:**
+  - Fill in the contact form without providing a last name.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - An error indicating that the last name is required should be displayed.
+
+#### 4. Missing Email ❌
+
+- **Test Steps:**
+  - Fill in the contact form without providing an email address.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - An error indicating that the email address is required should be displayed.
+
+#### 5. Missing Subject ❌
+
+- **Test Steps:**
+  - Fill in the contact form without selecting a subject.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - An error indicating that a subject must be selected should be displayed.
+
+#### 6. Send Message Successfully ✅
+
+- **Test Steps:**
+  - Fill in the contact form with valid information.
+  - Submit the contact form.
+- **Expected Outcome:**
+  - A success message confirming the message submission should be displayed.
+
+## 🛒 Application Feature: Product Interaction
+
+The Product Interaction feature encompasses a set of tests that validate various actions a user can perform with products on the website. 🌟
+
+### Test Cases
+
+#### 1. Match First Product with Backend Data 🔄
+
+- **Test Steps:**
+  - Click on the first product.
+  - Retrieve product details from the backend.
+  - Compare the product name and description with the backend data.
+- **Expected Outcome:**
+  - Product name and description match the backend data.
+
+#### 2. Match Second Product with Backend Data 🔄
+
+- **Test Steps:**
+  - Click on the second product.
+  - Retrieve product details from the backend.
+  - Compare the product name and description with the backend data.
+- **Expected Outcome:**
+  - Product name and description match the backend data.
+
+#### 3. Quantity Manipulation ⬆️⬇️
+
+- **Test Steps:**
+  - Click on a product.
+  - Increase the quantity of the product.
+  - Decrease the quantity of the product.
+- **Expected Outcome:**
+  - Quantity manipulation functions correctly.
+
+#### 4. Add Product to Cart 🛒
+
+- **Test Steps:**
+  - Click on a product.
+  - Add the product to the cart.
+- **Expected Outcome:**
+  - Product is successfully added to the cart.
+
+#### 5. Add Product to Favorites ❤️
+
+- **Test Steps:**
+  - Log in to the platform.
+  - Click on a product.
+  - Add the product to favorites.
+- **Expected Outcome:**
+  - Product is successfully added to the favorites list.
+
+#### 6. Unable to Add Product to Favorites (Not Logged In) 🚫
+
+- **Test Steps:**
+  - Click on a product.
+  - Attempt to add the product to favorites without being logged in.
+- **Expected Outcome:**
+  - Unauthorized message should appear indicating inability to add to favorites.
+
+## 🛒 Application Feature: Order Placement
+
+The Order Placement feature comprises a test that validates the process of placing an order on the website. 🌟
+
+### Test Case
+
+#### 1. Place an Order and Complete Payment 💳
+
+- **Test Steps:**
+  - Log in to the platform.
+  - Click on a product.
+  - Add the product to the cart.
+  - Proceed to the cart.
+  - Proceed to address information.
+  - Proceed to delivery method.
+  - Proceed to payment method.
+  - Select "Gift Card" as the payment method.
+  - Enter account name and account number.
+  - Complete the order.
+- **Expected Outcome:**
+  - Payment is successful, and a confirmation message is displayed.
