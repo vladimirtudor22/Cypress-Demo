@@ -2,9 +2,9 @@
 
 ## 📋 Content of this Project
 
-- [Description](#📝-description)
-- [Usage Instructions](#⚙️-usage-instructions)
-- [Selected Website for Testing](#🌐-selected-website-for-testing)
+- [Description](#description)
+- [Usage Instructions](#usage-instructions)
+- [Selected Website for Testing](#selected-website-for-testing)
 
 ### ⭐️ Features
 
@@ -15,11 +15,11 @@
 - [Product Interaction](#application-feature-product-interaction)
 - [Order Placement](#application-feature-order-placement)
 
-## 📝 Description
+## Description
 
 This project aims to showcase automated testing using the Cypress framework. The tests are focused on a specially created website designed for automated testing demonstrations. The primary objective of this project is to provide a lively demonstration of automated testing.
 
-## ⚙️ Usage Instructions
+## Usage Instructions
 
 To run the automated tests for this project, follow these steps:
 
@@ -40,7 +40,7 @@ To run the automated tests for this project, follow these steps:
 
 For detailed instructions, refer to the [Cypress Documentation](https://docs.cypress.io/).
 
-## 🌐 Selected Website for Testing
+## Selected Website for Testing
 
 The tests in this project are conducted on the [Practice Software Testing](https://practicesoftwaretesting.com/#/) website. Cypress, in combination with JavaScript, was utilized for testing purposes.
 
