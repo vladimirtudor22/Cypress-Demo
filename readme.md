@@ -5,15 +5,15 @@
 - [Description](#📝-description)
 - [Usage Instructions](#⚙️-usage-instructions)
 - [Selected Website for Testing](#🌐-selected-website-for-testing)
-- [Account](#📄-application-feature-account)
-- [Contact Page](#✉️-application-feature-contact-page)
-- [Product Interaction](#🛒-application-feature-product-interaction)
-- [Order Placement](#🛒-application-feature-order-placement)
 
 ### ⭐️ Features
 
 - [Navigation Bar](#🧭-application-feature-navigation-bar)
 - [Home Page](#🏠-application-feature-home-page)
+- [Account](#📄-application-feature-account)
+- [Contact Page](#✉️-application-feature-contact-page)
+- [Product Interaction](#🛒-application-feature-product-interaction)
+- [Order Placement](#🛒-application-feature-order-placement)
 
 ## 📝 Description
 
