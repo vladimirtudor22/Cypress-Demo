@@ -14,7 +14,7 @@
 //
 Cypress.Commands.add("login", () => {
   cy.get('[data-test="nav-sign-in"]').click();
-  cy.get('[data-test="email"]').type("John.Doe@example.com");
+  cy.get('[data-test="email"]').type("John.Doe.Demo.Vlad@example.com");
   cy.get('[data-test="password"]').type("JohnDoePass");
   cy.get('[data-test="login-submit"]').click();
   cy.get('[data-test="nav-user-menu"]').contains("Doe John");

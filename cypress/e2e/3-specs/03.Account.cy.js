@@ -15,7 +15,7 @@ describe("Account", () => {
     cy.get('[data-test="state"]').type("TestState");
     cy.get('[data-test="country"]').select("Romania");
     cy.get('[data-test="phone"]').type("0700000000");
-    cy.get('[data-test="email"]').type("John.Doe@example.com");
+    cy.get('[data-test="email"]').type("John.Doe.Demo.Vlad@example.com");
     cy.get('[data-test="password"]').type("JohnDoePass");
     cy.get('[data-test="register-submit"]').click();
   });
@@ -31,7 +31,7 @@ describe("Account", () => {
     cy.get('[data-test="state"]').type("TestState");
     cy.get('[data-test="country"]').select("Romania");
     cy.get('[data-test="phone"]').type("0700000000");
-    cy.get('[data-test="email"]').type("John.Doe@example.com");
+    cy.get('[data-test="email"]').type("John.Doe.Demo.Vlad@example.com");
     cy.get('[data-test="password"]').type("JohnDoePass");
     cy.get('[data-test="register-submit"]').click();
     cy.get('[data-test="register-error"]').should("be.visible");

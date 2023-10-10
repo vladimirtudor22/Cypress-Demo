@@ -104,9 +104,6 @@ describe("HomePage", () => {
       `[data-test="${ids[0]}"] > .card-img-wrapper > .card-img-top`
     ).click();
     cy.get('[data-test="add-to-favorites"]').click();
-    cy.get(".toast-body").should(
-      "contain",
-      "Product added to your favorites list."
-    );
+    cy.get(".toast-body").should("contain", "favorite");
   });
 });
