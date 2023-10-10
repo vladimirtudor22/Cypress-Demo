@@ -315,12 +315,12 @@ The Order Placement feature comprises a test that validates the process of placi
 ## Report Generation 📊
 
 In this case, using Cypress, the reports are generated directly in the terminal.
-The advantage of the Cypress framework is that we can run tests individually using the command
+The advantage of the Cypress framework is that we can run tests individually using following command, and it will open our project in the browser, allowing us to click on a spec file to run it.
 
 ```bash
 yarn cypress open
 ```
 
-, and it will open our project in the browser, allowing us to click on a spec file to run it. Additionally, after running, the report is displayed on the opened website.
+Additionally, after running, the report is displayed on the opened website.
 
 Since this is a project already published, I have not been able to address component testing within this framework. 🚀
