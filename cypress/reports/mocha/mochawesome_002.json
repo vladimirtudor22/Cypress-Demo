@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-10-19T20:56:56.714Z",
+    "end": "2023-10-19T20:57:22.292Z",
+    "duration": 25578,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "979f1e93-9521-4944-9895-48fec0fd44b3",
+      "title": "",
+      "fullFile": "cypress/e2e/3-specs/03.Account.cy.js",
+      "file": "cypress/e2e/3-specs/03.Account.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b6119d68-aa9c-4d6b-947d-d57eb4745fdd",
+          "title": "Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register",
+              "fullTitle": "Account Register",
+              "timedOut": null,
+              "duration": 5828,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-sign-in\"]').click();\ncy.get('[data-test=\"register-link\"]').click();\ncy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"dob\"]').type(\"1999-10-22\");\ncy.get('[data-test=\"address\"]').type(\"Street test, 10\");\ncy.get('[data-test=\"postcode\"]').type(\"910021\");\ncy.get('[data-test=\"city\"]').type(\"TestCity\");\ncy.get('[data-test=\"state\"]').type(\"TestState\");\ncy.get('[data-test=\"country\"]').select(\"Romania\");\ncy.get('[data-test=\"phone\"]').type(\"0700000000\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe.Demo.Vlad@example.com\");\ncy.get('[data-test=\"password\"]').type(\"JohnDoePass\");\ncy.get('[data-test=\"register-submit\"]').click();",
+              "err": {},
+              "uuid": "81330e14-39d3-4401-9def-1db1eebf48bf",
+              "parentUUID": "b6119d68-aa9c-4d6b-947d-d57eb4745fdd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register -> This email address already exists.",
+              "fullTitle": "Account Register -> This email address already exists.",
+              "timedOut": null,
+              "duration": 5607,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-sign-in\"]').click();\ncy.get('[data-test=\"register-link\"]').click();\ncy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"dob\"]').type(\"1999-10-22\");\ncy.get('[data-test=\"address\"]').type(\"Street test, 10\");\ncy.get('[data-test=\"postcode\"]').type(\"910021\");\ncy.get('[data-test=\"city\"]').type(\"TestCity\");\ncy.get('[data-test=\"state\"]').type(\"TestState\");\ncy.get('[data-test=\"country\"]').select(\"Romania\");\ncy.get('[data-test=\"phone\"]').type(\"0700000000\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe.Demo.Vlad@example.com\");\ncy.get('[data-test=\"password\"]').type(\"JohnDoePass\");\ncy.get('[data-test=\"register-submit\"]').click();\ncy.get('[data-test=\"register-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "caf61bde-a614-4360-abbb-38d377c8f19e",
+              "parentUUID": "b6119d68-aa9c-4d6b-947d-d57eb4745fdd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login wrong account",
+              "fullTitle": "Account Login wrong account",
+              "timedOut": null,
+              "duration": 4092,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-sign-in\"]').click();\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"password\"]').type(\"JohnDoe\");\ncy.get('[data-test=\"login-submit\"]').click();\ncy.get('[data-test=\"login-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "e04548c0-3322-4d08-ad78-d667b71ff4c7",
+              "parentUUID": "b6119d68-aa9c-4d6b-947d-d57eb4745fdd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login real account and Sign Out",
+              "fullTitle": "Account Login real account and Sign Out",
+              "timedOut": null,
+              "duration": 8825,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.login();\ncy.get('[data-test=\"nav-user-menu\"]').click();\ncy.get('[data-test=\"nav-sign-out\"]').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Doe John' within the element: <a#user-menu.nav-link.dropdown-toggle> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Doe John' within the element: <a#user-menu.nav-link.dropdown-toggle> but never did.\n    at Context.eval (webpack://cypress-test/./cypress/support/commands.js:20:40)",
+                "diff": null
+              },
+              "uuid": "38bc1ce5-46b4-4bce-822a-e18096627ef8",
+              "parentUUID": "b6119d68-aa9c-4d6b-947d-d57eb4745fdd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "81330e14-39d3-4401-9def-1db1eebf48bf",
+            "caf61bde-a614-4360-abbb-38d377c8f19e",
+            "e04548c0-3322-4d08-ad78-d667b71ff4c7"
+          ],
+          "failures": [
+            "38bc1ce5-46b4-4bce-822a-e18096627ef8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24352,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

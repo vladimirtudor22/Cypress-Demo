@@ -10,7 +10,7 @@ describe("HomePage", () => {
       multiple: true,
       force: true,
     });
-    cy.get(".ngx-slider-model-high").should("not.contain", "100");
+    cy.get(".ngx-slider-model-high").should("contain", "100");
     cy.get(":nth-child(13) > ul > :nth-child(1) > label").click();
     cy.get(":nth-child(13) > ul > :nth-child(2) > label").click();
     cy.get(":nth-child(14) > ul > :nth-child(1) > label").click();

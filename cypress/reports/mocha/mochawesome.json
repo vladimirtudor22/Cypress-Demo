@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-19T20:56:19.315Z",
+    "end": "2023-10-19T20:56:40.142Z",
+    "duration": 20827,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9528ba65-487f-49e1-ba3f-0e3ee8e55254",
+      "title": "",
+      "fullFile": "cypress/e2e/3-specs/01.NavigationBar.cy.js",
+      "file": "cypress/e2e/3-specs/01.NavigationBar.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+          "title": "Navigation Bar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to navigate to Home",
+              "fullTitle": "Navigation Bar Should be able to navigate to Home",
+              "timedOut": null,
+              "duration": 3058,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-home\"]').click();\ncy.url().should(\"include\", \"/#\");",
+              "err": {},
+              "uuid": "204ca793-9a43-45f2-98fd-9bb3b2425478",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to Hand Tools",
+              "fullTitle": "Navigation Bar Should be able to navigate to Hand Tools",
+              "timedOut": null,
+              "duration": 2357,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-categories\"]').click();\ncy.get('[data-test=\"nav-hand-tools\"]').click();\ncy.url().should(\"include\", \"/category/hand-tools\");",
+              "err": {},
+              "uuid": "6e596782-ca06-49c2-a21d-ecba1e28e294",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to power tools",
+              "fullTitle": "Navigation Bar Should be able to navigate to power tools",
+              "timedOut": null,
+              "duration": 2321,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-categories\"]').click();\ncy.get('[data-test=\"nav-power-tools\"]').click();\ncy.url().should(\"include\", \"/category/power-tools\");",
+              "err": {},
+              "uuid": "5b1bed82-0585-4861-a781-03ae56945b3e",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to special tools",
+              "fullTitle": "Navigation Bar Should be able to navigate to special tools",
+              "timedOut": null,
+              "duration": 2318,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-categories\"]').click();\ncy.get('[data-test=\"nav-special-tools\"]').click();\ncy.url().should(\"include\", \"/category/special-tools\");",
+              "err": {},
+              "uuid": "3a7ba43d-e080-42ed-8fc9-3e09deccc0c0",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to rentals",
+              "fullTitle": "Navigation Bar Should be able to navigate to rentals",
+              "timedOut": null,
+              "duration": 2582,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-categories\"]').click();\ncy.get('[data-test=\"nav-rentals\"]').click();\ncy.url().should(\"include\", \"/rentals\");",
+              "err": {},
+              "uuid": "8ff7182e-0178-49b7-b4b9-c68afc87faac",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to sign in",
+              "fullTitle": "Navigation Bar Should be able to navigate to sign in",
+              "timedOut": null,
+              "duration": 4070,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-sign-in\"]').click();\ncy.url().should(\"include\", \"/auth/login\");",
+              "err": {},
+              "uuid": "e780dc42-d4aa-46f3-9f93-43f5913fdd93",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to navigate to contact",
+              "fullTitle": "Navigation Bar Should be able to navigate to contact",
+              "timedOut": null,
+              "duration": 2533,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"nav-contact\"]').click();\ncy.url().should(\"include\", \"/contact\");",
+              "err": {},
+              "uuid": "9f75024c-b231-4e71-a7b8-477bc4332f26",
+              "parentUUID": "0c2c514d-a4c7-4b9c-b840-15491ecbd55a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "204ca793-9a43-45f2-98fd-9bb3b2425478",
+            "6e596782-ca06-49c2-a21d-ecba1e28e294",
+            "5b1bed82-0585-4861-a781-03ae56945b3e",
+            "3a7ba43d-e080-42ed-8fc9-3e09deccc0c0",
+            "8ff7182e-0178-49b7-b4b9-c68afc87faac",
+            "e780dc42-d4aa-46f3-9f93-43f5913fdd93",
+            "9f75024c-b231-4e71-a7b8-477bc4332f26"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19239,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
