@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-06T07:18:35.615Z",
+    "end": "2023-11-06T07:19:06.276Z",
+    "duration": 30661,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "55fb73c3-bbcf-46d2-ab35-4a6c081ae4e4",
+      "title": "",
+      "fullFile": "cypress/e2e/3-specs/04.Contact.cy.js",
+      "file": "cypress/e2e/3-specs/04.Contact.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+          "title": "Contact",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Message shorther",
+              "fullTitle": "Contact Message shorther",
+              "timedOut": null,
+              "duration": 4054,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"subject\"]').select(\"Webmaster\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get('[data-test=\"message-error\"]').should(\"contain\", \"Message must be minimal 50 characters\");",
+              "err": {},
+              "uuid": "b8fe92ef-62bd-4b62-9c16-b833dc81818b",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "No firstname",
+              "fullTitle": "Contact No firstname",
+              "timedOut": null,
+              "duration": 4746,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"subject\"]').select(\"Webmaster\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl arcu, mattis vel ex in, interdum dictum metus.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get('[data-test=\"first-name-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "d29e1024-9919-40d2-83a3-3131144ae2b6",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "No lastName",
+              "fullTitle": "Contact No lastName",
+              "timedOut": null,
+              "duration": 5119,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"subject\"]').select(\"Webmaster\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl arcu, mattis vel ex in, interdum dictum metus.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get('[data-test=\"last-name-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "db44be8d-5f94-45e2-8b73-58013ac41554",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "No email",
+              "fullTitle": "Contact No email",
+              "timedOut": null,
+              "duration": 4944,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"subject\"]').select(\"Webmaster\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl arcu, mattis vel ex in, interdum dictum metus.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get('[data-test=\"email-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "7863f89e-de62-4e46-b2ff-516d40e57721",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "No subject",
+              "fullTitle": "Contact No subject",
+              "timedOut": null,
+              "duration": 5202,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl arcu, mattis vel ex in, interdum dictum metus.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get('[data-test=\"subject-error\"]').should(\"be.visible\");",
+              "err": {},
+              "uuid": "2f140437-e4dd-43d4-a505-e071caa017b6",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Shoud be able to send a message with contact form",
+              "fullTitle": "Contact Shoud be able to send a message with contact form",
+              "timedOut": null,
+              "duration": 5652,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"first-name\"]').type(\"Doe\");\ncy.get('[data-test=\"last-name\"]').type(\"John\");\ncy.get('[data-test=\"email\"]').type(\"John.Doe@example.com\");\ncy.get('[data-test=\"subject\"]').select(\"Webmaster\");\ncy.get('[data-test=\"message\"]').type(\"This is a test message.\\n Ignore it.\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl arcu, mattis vel ex in, interdum dictum metus.\");\ncy.get('[data-test=\"contact-submit\"]').click();\ncy.get(\".alert\").should(\"contain\", \"Thanks for your message! We will contact you shortly.\");",
+              "err": {},
+              "uuid": "0bee908d-168f-4863-8a9c-df0b832b9e7c",
+              "parentUUID": "90a1c73b-843c-47a2-98f1-010ac1095bd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b8fe92ef-62bd-4b62-9c16-b833dc81818b",
+            "d29e1024-9919-40d2-83a3-3131144ae2b6",
+            "db44be8d-5f94-45e2-8b73-58013ac41554",
+            "7863f89e-de62-4e46-b2ff-516d40e57721",
+            "2f140437-e4dd-43d4-a505-e071caa017b6",
+            "0bee908d-168f-4863-8a9c-df0b832b9e7c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29717,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

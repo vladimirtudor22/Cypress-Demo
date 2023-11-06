@@ -12,6 +12,7 @@ describe("Navigation Bar", () => {
     cy.get('[data-test="nav-hand-tools"]').click();
     cy.url().should("include", "/category/hand-tools");
   });
+
   it("Should be able to navigate to power tools", () => {
     cy.get('[data-test="nav-categories"]').click();
     cy.get('[data-test="nav-power-tools"]').click();
@@ -22,7 +23,6 @@ describe("Navigation Bar", () => {
     cy.get('[data-test="nav-special-tools"]').click();
     cy.url().should("include", "/category/special-tools");
   });
-
   it("Should be able to navigate to rentals", () => {
     cy.get('[data-test="nav-categories"]').click();
     cy.get('[data-test="nav-rentals"]').click();
